@@ -8,25 +8,25 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top inner-pic">
     <div class="container">
-      <div class = "text-center">
-
-      </div>
     </div>
   </nav>
 
-
-
+  
   <script src='//static.opentok.com/v2/js/opentok.min.js'></script>
   <%= yield %>
 
-
   <footer>
     <div class = "container">
-      <div class = "text-center times">
+      <hr class = "hr-thick inner-pic"></hr>
+      <div class = "text-center times rockwell-links">
         |
         <%= link_to "Home", root_path, class: "blk" %>
+        |
+        <%= link_to "Flux - Like a Pro", "https://justgetflux.com/", class: "blk" %>
+        |
+        <%= link_to "Snippets", "http://www.atomtips.com/get-productive-atom-snippets/", class: "blk" %>
         |
       </div>
     </div>

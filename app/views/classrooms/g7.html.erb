@@ -5,19 +5,20 @@
       <div class = "pull-right">
         <h3><%= link_to "Load Whiteboard", "http://serene-meadow-5206.herokuapp.com/classrooms" %></h3>
       </div>
-      <h1>Whachu Know About It</h1>
+      <h1 class = "rockwell-g7">- G7 -</h1>
     </div>
-  </div>
+    <hr></hr>
 
 
     <div class = "col-md-3">
       <div id='myPublisherDiv'></div>
       <div id='subscribersDiv'></div>
 
+      <script src='//static.opentok.com/v2/js/opentok.min.js'></script>
       <script>
       var apiKey = '45204612';
       var sessionId = '2_MX40NTIwNDYxMn5-MTQyODUxMDAwNjkwNH5ONkkwcStsd1JmcUF6NWZmdGhHWHdYeGp-fg';
-      var token = 'T1==cGFydG5lcl9pZD00NTIwNDYxMiZzaWc9MjkzOGYzOGYxMjQ1YzkxODdmM2I5ODRjZTU5MWU4YjNkMTM3ZmVhNTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdORFl4TW41LU1UUXlPRFV4TURBd05qa3dOSDVPTmtrd2NTdHNkMUptY1VGNk5XWm1kR2hIV0hkWWVHcC1mZyZjcmVhdGVfdGltZT0xNDI4NTEyMjQ0Jm5vbmNlPTAuNjAzOTQ3OTY3MTk0MjA5MSZleHBpcmVfdGltZT0xNDI4NTk4NjQ0';
+      var token = 'T1==cGFydG5lcl9pZD00NTIwNDYxMiZzaWc9ZDQ4MzJlYTI5MWNjMTU4MWVmMGQ0ZmQzNTAwZDM4YTQ3MzRhMTNmZTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdORFl4TW41LU1UUXlPRFV4TURBd05qa3dOSDVPTmtrd2NTdHNkMUptY1VGNk5XWm1kR2hIV0hkWWVHcC1mZyZjcmVhdGVfdGltZT0xNDI4NjA5Mjg0Jm5vbmNlPTAuNTEwMjYyNjMwNTQwNTM4JmV4cGlyZV90aW1lPTE0Mjg2OTU2ODQ=';
       var session = OT.initSession(apiKey, sessionId);
       session.on({
         streamCreated: function(event) {
@@ -34,10 +35,9 @@
       </script>
     </div>
 
-    <div class = "col-md-9">
-      <iframe src="http://www.webwhiteboard.com/#8cm3e448" width="1000px" height="1200px"></iframe>
+    <div class = "col-md-9 frame">
+      <iframe src="http://www.groupboard.com/board/421399?iframe=true" width="1000" height="800" scrolling="no" frameborder="0"></iframe>
     </div>
 
-
-    <hr>
   </div>
+</div>
