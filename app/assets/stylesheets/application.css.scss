@@ -18,7 +18,7 @@
 @import "bootstrap";
 
 .inner-pic{
-  background-image: url('real_cf.png');
+  background-image: image-url('real_cf.png');
   background-repeat: repeat;
 }
 
@@ -43,7 +43,7 @@ footer      {padding-bottom: 20px; }
 }
 
 body {
-  background-image: url("whiteboard.jpg");
+  background-image: image-url("/whiteboard.jpg");
   // background-image: url("public/img/whiteboard3.jpg");
   // background-image: url("public/whiteboard2.jpg");
   position: relative;
