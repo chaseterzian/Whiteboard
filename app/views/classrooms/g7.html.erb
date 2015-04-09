@@ -10,34 +10,34 @@
   </div>
 
 
-  <div class = "col-md-3">
-    <div id='myPublisherDiv'></div>
-    <div id='subscribersDiv'></div>
+    <div class = "col-md-3">
+      <div id='myPublisherDiv'></div>
+      <div id='subscribersDiv'></div>
 
-    <script>
-    var apiKey = '45204612';
-    var sessionId = '2_MX40NTIwNDYxMn5-MTQyODUxMDAwNjkwNH5ONkkwcStsd1JmcUF6NWZmdGhHWHdYeGp-fg';
-    var token = 'T1==cGFydG5lcl9pZD00NTIwNDYxMiZzaWc9MjkzOGYzOGYxMjQ1YzkxODdmM2I5ODRjZTU5MWU4YjNkMTM3ZmVhNTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdORFl4TW41LU1UUXlPRFV4TURBd05qa3dOSDVPTmtrd2NTdHNkMUptY1VGNk5XWm1kR2hIV0hkWWVHcC1mZyZjcmVhdGVfdGltZT0xNDI4NTEyMjQ0Jm5vbmNlPTAuNjAzOTQ3OTY3MTk0MjA5MSZleHBpcmVfdGltZT0xNDI4NTk4NjQ0';
-    var session = OT.initSession(apiKey, sessionId);
-    session.on({
-      streamCreated: function(event) {
-        session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'});
-      }
-    });
-    session.connect(token, function(error) {
-      if (error) {
-        console.log(error.message);
-      } else {
-        session.publish('myPublisherDiv', {width: 320, height: 240});
-      }
-    });
-    </script>
+      <script>
+      var apiKey = '45204612';
+      var sessionId = '2_MX40NTIwNDYxMn5-MTQyODUxMDAwNjkwNH5ONkkwcStsd1JmcUF6NWZmdGhHWHdYeGp-fg';
+      var token = 'T1==cGFydG5lcl9pZD00NTIwNDYxMiZzaWc9MjkzOGYzOGYxMjQ1YzkxODdmM2I5ODRjZTU5MWU4YjNkMTM3ZmVhNTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdORFl4TW41LU1UUXlPRFV4TURBd05qa3dOSDVPTmtrd2NTdHNkMUptY1VGNk5XWm1kR2hIV0hkWWVHcC1mZyZjcmVhdGVfdGltZT0xNDI4NTEyMjQ0Jm5vbmNlPTAuNjAzOTQ3OTY3MTk0MjA5MSZleHBpcmVfdGltZT0xNDI4NTk4NjQ0';
+      var session = OT.initSession(apiKey, sessionId);
+      session.on({
+        streamCreated: function(event) {
+          session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'});
+        }
+      });
+      session.connect(token, function(error) {
+        if (error) {
+          console.log(error.message);
+        } else {
+          session.publish('myPublisherDiv', {width: 320, height: 240});
+        }
+      });
+      </script>
+    </div>
+
+    <div class = "col-md-9">
+      <iframe src="http://www.webwhiteboard.com/#zfyjhmw4" width="1000px" height="1200px"></iframe>
+    </div>
+
+
+    <hr>
   </div>
-
-  <div class = "col-md-9">
-    <iframe src="https://realtimeboard.com/app/dashboard" width="1000px" height="1200px"></iframe>
-  </div>
-
-
-  <hr>
-</div>
