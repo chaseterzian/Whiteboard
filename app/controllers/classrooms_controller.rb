@@ -6,7 +6,21 @@ class ClassroomsController < ApplicationController
   def g7
   end
 
-  def personal_room
+  def rooms
   end
+
+  def scratchpader
+  end
+
+  def editnator
+  end
+
+  def uml
+  end
+
+  def boredroom
+  end
+
+
 
 end

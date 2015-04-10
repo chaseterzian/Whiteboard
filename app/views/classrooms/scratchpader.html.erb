@@ -1,0 +1,39 @@
+<div class = "container">
+  <div class = "page-header">
+
+
+      <h1 class = "rockwell-rooms room-title"> The Scratchpader. </h1>
+
+
+
+    <div class = "col-md-3">
+      <div id='myPublisherDiv'></div>
+      <div id='subscribersDiv'></div>
+
+      <script src='//static.opentok.com/v2/js/opentok.min.js'></script>
+      <script>
+      var apiKey = '45204612';
+      var sessionId = '2_MX40NTIwNDYxMn5-MTQyODUxMDAwNjkwNH5ONkkwcStsd1JmcUF6NWZmdGhHWHdYeGp-fg';
+      var token = 'T1==cGFydG5lcl9pZD00NTIwNDYxMiZzaWc9ZDQ4MzJlYTI5MWNjMTU4MWVmMGQ0ZmQzNTAwZDM4YTQ3MzRhMTNmZTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdORFl4TW41LU1UUXlPRFV4TURBd05qa3dOSDVPTmtrd2NTdHNkMUptY1VGNk5XWm1kR2hIV0hkWWVHcC1mZyZjcmVhdGVfdGltZT0xNDI4NjA5Mjg0Jm5vbmNlPTAuNTEwMjYyNjMwNTQwNTM4JmV4cGlyZV90aW1lPTE0Mjg2OTU2ODQ=';
+      var session = OT.initSession(apiKey, sessionId);
+      session.on({
+        streamCreated: function(event) {
+          session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'});
+        }
+      });
+      session.connect(token, function(error) {
+        if (error) {
+          console.log(error.message);
+        } else {
+          session.publish('myPublisherDiv', {width: 320, height: 240});
+        }
+      });
+      </script>
+    </div>
+
+    <div class = "col-md-9 frame">
+        <iframe src="//www.groupboard.com/board/421399?iframe=true" width="1000" height="800" scrolling="no" frameborder="0"></iframe>
+    </div>
+
+  </div>
+</div>

@@ -25,9 +25,21 @@
 .frame{
   top: -215px;
 }
+.editnator{
+  top: -150px;
+}
+
+.room-title{
+  top: -215px;
+}
+
+.pad        {padding-top:    150px; }
+
+
 
 
 body        {padding-top:    50px; }
+
 
 footer      {padding-bottom: 20px; }
 
@@ -67,15 +79,6 @@ body {
     text-decoration: underline;
 }
 
-.papy {
-	font-family: Papyrus, fantasy;
-	font-size: 100px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.3999996185303px;
-}
-
 .rockwell {
 	font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
 	font-size: 80px;
@@ -106,6 +109,15 @@ body {
 .rockwell-g7{
 	font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
 	font-size: 50px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+
+.rockwellbr{
+	font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+	font-size: 25px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
