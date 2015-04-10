@@ -4,7 +4,9 @@ class ClassroomsController < ApplicationController
   end
 
   def g7
-    
+  end
+
+  def personal_room
   end
 
 end
