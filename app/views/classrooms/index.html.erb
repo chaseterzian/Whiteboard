@@ -20,7 +20,7 @@
       <hr>
       <%= link_to "- G6 -", root_path, data: {confirm: "You do not have access"}, class: "blk" %>
       <hr>
-      <%= link_to "- G7 -", g7_path, data: {confirm: "You are entering a live collaboration environment, people can see and hear you!"}, class: "blk"  %>
+      <%= link_to "- G7 -", g7_path(:protocol => 'http'), data: {confirm: "You are entering a live collaboration environment, people can see and hear you!"}, class: "blk"  %>
       <hr>
       <%= link_to "- G8 -", root_path, data: {confirm: "You do not have access"}, class: "blk" %>
       <hr>
