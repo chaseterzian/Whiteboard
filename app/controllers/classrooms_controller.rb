@@ -1,3 +1,4 @@
+require "opentok"
 class ClassroomsController < ApplicationController
 
   def index

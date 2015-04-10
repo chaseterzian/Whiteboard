@@ -2,9 +2,8 @@ Rails.application.routes.draw do
 
 
   root 'classrooms#index'
-  get '/classrooms' => 'classrooms#g7', as: :g7
-  get '/classrooms' => 'classrooms#personal_room', as: :personal_room
-
+  get '/g7' => 'classrooms#g7'
+  get '/personal_room' => 'classrooms#personal_room'
 
 
 end
