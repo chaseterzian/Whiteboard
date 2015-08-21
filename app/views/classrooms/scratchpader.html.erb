@@ -16,25 +16,26 @@
       <div id='myPublisherDiv'></div>
       <div id='subscribersDiv'></div>
 
-      <script src='//static.opentok.com/v2/js/opentok.min.js'></script>
-      <script>
-      var apiKey = '45207092';
-      var sessionId = '2_MX40NTIwNzA5Mn5-MTQyODY5NDM0MzE0Mn5VRGd0MDhXZE5nQUgydzNkbXEwNTVLV3R-fg';
-      var token = 'T1==cGFydG5lcl9pZD00NTIwNzA5MiZzaWc9ZDczNzY3MmJlY2M5Mzk4OTViY2MxMTVjNzNjN2M2YjNjNjI4ZDc1Nzpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdOekE1TW41LU1UUXlPRFk1TkRNME16RTBNbjVWUkdkME1EaFhaRTVuUVVneWR6TmtiWEV3TlRWTFYzUi1mZyZjcmVhdGVfdGltZT0xNDI4Njk0MzY5Jm5vbmNlPTAuMTIxODg3ODE5NTg5Njk0NTImZXhwaXJlX3RpbWU9MTQyODc4MDc2OQ==';
-      var session = OT.initSession(apiKey, sessionId);
-      session.on({
-        streamCreated: function(event) {
-          session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'});
-        }
-      });
+    <script src='//static.opentok.com/v2/js/opentok.min.js'></script> 
+    <script> 
+      var apiKey = '45203522';
+      var sessionId = '2_MX40NTIwMzUyMn5-MTQyODQzNTgyMTAwMX5nM0dtZmpFMWx2VlpEUlZoNlBDQ2dLaTF-fg'; 
+      var token = 'T1==cGFydG5lcl9pZD00NTIwMzUyMiZzaWc9ZWE5YmZlZmJmZmVmMDVmMWJkODJlYjdjNzFiNzFjNzg0NDAxZWEyOTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdNelV5TW41LU1UUXlPRFF6TlRneU1UQXdNWDVuTTBkdFptcEZNV3gyVmxwRVVsWm9ObEJEUTJkTGFURi1mZyZjcmVhdGVfdGltZT0xNDQwMTE4NjgyJm5vbmNlPTAuNDc2NDIzNzg0NDU1MjkyOSZleHBpcmVfdGltZT0xNDQwMjA1MDgy';
+      var session = OT.initSession(apiKey, sessionId); 
+      session.on({ 
+          streamCreated: function(event) { 
+            session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'}); 
+          } 
+      }); 
       session.connect(token, function(error) {
         if (error) {
           console.log(error.message);
         } else {
-          session.publish('myPublisherDiv', {width: 320, height: 240});
+          session.publish('myPublisherDiv', {width: 320, height: 240}); 
         }
       });
-      </script>
+    </script> 
+    
     </div>
 
     <div class = "col-md-9">

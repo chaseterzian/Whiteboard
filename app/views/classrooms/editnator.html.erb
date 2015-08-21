@@ -15,25 +15,25 @@
       <div id='myPublisherDiv'></div>
       <div id='subscribersDiv'></div>
 
-      <script src='//static.opentok.com/v2/js/opentok.min.js'></script>
-      <script>
-      var apiKey = '45207782';
-      var sessionId = '2_MX40NTIwNzc4Mn5-MTQyODc5MDEwOTg0OH5GbXZZRElYa3VhUGt5OWF6cWR6ZEE5dEt-fg';
-      var token = 'T1==cGFydG5lcl9pZD00NTIwNzc4MiZzaWc9NjFlZTZiMmM1ZmJhYmNjYzhkMTQ0YWMwNDgzZGViNjg4MDNlMDk0Njpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdOemM0TW41LU1UUXlPRGM1TURFd09UZzBPSDVHYlhaWlJFbFlhM1ZoVUd0NU9XRjZjV1I2WkVFNWRFdC1mZyZjcmVhdGVfdGltZT0xNDI4NzkwMjI5Jm5vbmNlPTAuNTgwMjAzODU2NjMxMzgzNyZleHBpcmVfdGltZT0xNDI4ODc2NjI5';
-      var session = OT.initSession(apiKey, sessionId);
-      session.on({
-        streamCreated: function(event) {
-          session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'});
-        }
-      });
+    <script src='//static.opentok.com/v2/js/opentok.min.js'></script> 
+    <script> 
+      var apiKey = '45203522';
+      var sessionId = '2_MX40NTIwMzUyMn5-MTQyODQzNTgyMTAwMX5nM0dtZmpFMWx2VlpEUlZoNlBDQ2dLaTF-fg'; 
+      var token = 'T1==cGFydG5lcl9pZD00NTIwMzUyMiZzaWc9YWRmNGFlY2QxNzI4ZWNjZTA5NGUwMjRhODIxOGUxYTc3NTU2OWEyNzpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdNelV5TW41LU1UUXlPRFF6TlRneU1UQXdNWDVuTTBkdFptcEZNV3gyVmxwRVVsWm9ObEJEUTJkTGFURi1mZyZjcmVhdGVfdGltZT0xNDQwMTE4OTAyJm5vbmNlPTAuMjg1MjQxMDg5NzkwMDE2NyZleHBpcmVfdGltZT0xNDQwMjA1MzAy';
+      var session = OT.initSession(apiKey, sessionId); 
+      session.on({ 
+          streamCreated: function(event) { 
+            session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'}); 
+          } 
+      }); 
       session.connect(token, function(error) {
         if (error) {
           console.log(error.message);
         } else {
-          session.publish('myPublisherDiv', {width: 320, height: 240});
+          session.publish('myPublisherDiv', {width: 320, height: 240}); 
         }
       });
-      </script>
+    </script> 
     </div>
 
     <div class = "col-md-9 editnator">

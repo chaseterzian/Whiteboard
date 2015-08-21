@@ -17,25 +17,25 @@
       <div id='myPublisherDiv'></div>
       <div id='subscribersDiv'></div>
 
-      <script src='//static.opentok.com/v2/js/opentok.min.js'></script>
-      <script>
-      var apiKey = '45207082';
-      var sessionId = '1_MX40NTIwNzA4Mn5-MTQyODY5NDE0Mjg4NH5DRzFYVmJlYlFVWlhrQUNqanEvVk5HMHh-fg';
-      var token = 'T1==cGFydG5lcl9pZD00NTIwNzA4MiZzaWc9Y2RkYjgyZTdhYTcyYmQ5ODhjNTNkNmNhZGE5NTk2OTI5MzJiY2U1NTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0ME5USXdOekE0TW41LU1UUXlPRFk1TkRFME1qZzROSDVEUnpGWVZtSmxZbEZWV2xoclFVTnFhbkV2Vms1SE1IaC1mZyZjcmVhdGVfdGltZT0xNDI4Njk0MTY1Jm5vbmNlPTAuMDQ4NDYyNTk0NDYyNzIxOTQmZXhwaXJlX3RpbWU9MTQyODc4MDU2NQ==';
-      var session = OT.initSession(apiKey, sessionId);
-      session.on({
-        streamCreated: function(event) {
-          session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'});
-        }
-      });
+    <script src='//static.opentok.com/v2/js/opentok.min.js'></script> 
+    <script> 
+      var apiKey = '45203522';
+      var sessionId = '2_MX40NTIwMzUyMn5-MTQyODQzNTgyMTAwMX5nM0dtZmpFMWx2VlpEUlZoNlBDQ2dLaTF-fg'; 
+      var token = 'T1==cGFydG5lcl9pZD00NTIwMzUyMiZzaWc9ODU1YjgzZjMwN2RkMWM0MGFiYWNlOWVlZmQzZDBmMTc3MzdkMDg0Mzpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5USXdNelV5TW41LU1UUXlPRFF6TlRneU1UQXdNWDVuTTBkdFptcEZNV3gyVmxwRVVsWm9ObEJEUTJkTGFURi1mZyZjcmVhdGVfdGltZT0xNDQwMTE5MDg3Jm5vbmNlPTAuNDE3MzI0NTQyNzMyMjcwMjYmZXhwaXJlX3RpbWU9MTQ0MDIwNTQ4Nw==';
+      var session = OT.initSession(apiKey, sessionId); 
+      session.on({ 
+          streamCreated: function(event) { 
+            session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'}); 
+          } 
+      }); 
       session.connect(token, function(error) {
         if (error) {
           console.log(error.message);
         } else {
-          session.publish('myPublisherDiv', {width: 320, height: 240});
+          session.publish('myPublisherDiv', {width: 320, height: 240}); 
         }
       });
-      </script>
+    </script> 
     </div>
 
     <div class = "col-md-9 editnator">
