@@ -17,13 +17,13 @@
       <div id='myPublisherDiv'></div>
       <div id='subscribersDiv'></div>
 
-    <script src='//static.opentok.com/v2/js/opentok.min.js'></script> 
+        <script src='//static.opentok.com/v2/js/opentok.min.js'></script> 
     <script> 
-      var apiKey = '45324832';
-      var sessionId = '2_MX40NTMyNDgzMn5-MTQ0MzY0NjMwNjE3Mn41S1dzVHZtRVBVUy8zNDIxeUVweXhEbVV-UH4'; 
-      var token = 'T1==cGFydG5lcl9pZD00NTMyNDgzMiZzaWc9YTZkMjg0NDExYzU5OWRlM2Q5NzI3Y2E4ZWQ4MDhhYTc4MjY5ZGYxMDpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5UTXlORGd6TW41LU1UUTBNelkwTmpNd05qRTNNbjQxUzFkelZIWnRSVkJWVXk4ek5ESXhlVVZ3ZVhoRWJWVi1VSDQmY3JlYXRlX3RpbWU9MTQ0MzY0NjMwOSZub25jZT0wLjczMDQ5NTM3Njg3MjA2NzMmZXhwaXJlX3RpbWU9MTQ0NjIzODA4NiZjb25uZWN0aW9uX2RhdGE9';
+      var apiKey = '45412452';
+      var sessionId = '1_MX40NTQxMjQ1Mn5-MTQ0NzgyMTAyNzQ4MH45QnRyYW16NDZnT2pES1VVKzJOZUFmbzV-UH4'; 
+      var token = 'T1==cGFydG5lcl9pZD00NTQxMjQ1MiZzaWc9NTQwOTcyMGYzODE3MTIxNDM5Yzc3NjIyNjQzYTA3YjgyODY5Njc2YTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0ME5UUXhNalExTW41LU1UUTBOemd5TVRBeU56UTRNSDQ1UW5SeVlXMTZORFpuVDJwRVMxVlZLekpPWlVGbWJ6Vi1VSDQmY3JlYXRlX3RpbWU9MTQ0NzgyMTA2MiZub25jZT0wLjkyMDYyMjQ4MjEzMzMwNiZleHBpcmVfdGltZT0xNDUwNDEzMDAxJmNvbm5lY3Rpb25fZGF0YT0=';
       var session = OT.initSession(apiKey, sessionId); 
-      session.on({  
+      session.on({ 
           streamCreated: function(event) { 
             session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'}); 
           } 
