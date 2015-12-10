@@ -20,7 +20,7 @@ class ClassroomsController < ApplicationController
 
   def boredroom
   end
-
+# comment
 
 
 end
