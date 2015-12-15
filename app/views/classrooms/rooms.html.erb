@@ -1,14 +1,14 @@
+<div id="room-fade">
 <div class = "container">
+    <nav class="navbar navbar-inverse navbar-fixed-top inner-pic container">
+    </nav>
   <div class = "page-header">
 
     <div class = "text-center times">
       <h1 class = "rockwell">The Boardrooms.</h1>
     </div>
     <br>
-    <nav class="navbar navbar-inverse inner-pic">
-      <div class="container">
-      </div>
-    </nav>
+    <nav class="navbar navbar-inverse inner-pic"></nav>
 
 <div class = "times rockwell-rooms text-center padding">
   <%= link_to "- The Scratchpadder. -", scratchpader_path, data: {confirm: "You are about to enter a live collaborative environment, people will be able to see and hear you!"}, class: "blk" %>
@@ -22,4 +22,21 @@
 </div>
 
   </div>
+</div>
+
+    <hr class = "hr-thick inner-pic container"></hr>
+
+    <div class = "container">
+      <div class = "text-center times rockwell-links">
+        |
+        <%= link_to "Home", root_path, class: "blk" %>
+        |
+        <%= link_to "Flux - Like a Pro", "https://justgetflux.com/", class: "blk" %>
+        |
+        <%= link_to "Snippets", "http://www.atomtips.com/get-productive-atom-snippets/", class: "blk" %>
+        |
+        <%= link_to "Boardrooms", rooms_path, class: "blk" %>
+      </div>
+    </div>
+
 </div>

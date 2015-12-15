@@ -1,15 +1,17 @@
 <div class = "container">
+  
+   <nav class="navbar navbar-inverse navbar-fixed-top inner-pic container" id='top-bar'>
+  </nav>
   <div class = "page-header">
 
-    <div class = "text-center times">
-      <h1 class = "rockwell">The Whiteboard.</h1>
+    <div class = "text-center times pad-bottom">
+      <h1 class = "rockwell" id='whiteboard-letters'>The Whiteboard.</h1>
     </div>
-    <br>
-    <nav class="navbar navbar-inverse inner-pic">
-      <div class="container">
-      </div>
-    </nav>
 
+
+    <nav class="navbar navbar-inverse inner-pic" id='middle-bar'></nav>
+
+  <div id='hide-this'>
 
     <div class="text-center">
       Choose your organization
@@ -28,7 +30,24 @@
       <%= link_to "- Guest -", rooms_path, class: "blk" %>
       <hr>
     </div>
+  </div>
 
   </div>
 </div>
-  
+
+  <hr class = "hr-thick inner-pic container" id='footer-bar'></hr>
+  <footer id='footer-index'>
+    <div class = "container">
+      
+      <div class = "text-center times rockwell-links">
+        |
+        <%= link_to "Home", root_path, class: "blk" %>
+        |
+        <%= link_to "Flux - Like a Pro", "https://justgetflux.com/", class: "blk" %>
+        |
+        <%= link_to "Snippets", "http://www.atomtips.com/get-productive-atom-snippets/", class: "blk" %>
+        |
+        <%= link_to "Boardrooms", rooms_path, class: "blk" %>
+      </div>
+    </div>
+  </footer>
