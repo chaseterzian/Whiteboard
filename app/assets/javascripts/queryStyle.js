@@ -16,15 +16,15 @@ $(document).ready(function() {
 		},1500);
 
 		setTimeout(function() {
-		$('#footer-bar').fadeIn(4000);
+		$('#footer-bar').fadeIn(15000);
 		},1500);
 
 		setTimeout(function() {
-		$('#middle-bar').fadeIn(4000);
+		$('#middle-bar').fadeIn(15000);
 		},1700);
 
 		setTimeout(function() {
-		$('#top-bar').fadeIn(4000);
+		$('#top-bar').fadeIn(15000);
 		},2000);
 
 		$("#room-fade").hide();
