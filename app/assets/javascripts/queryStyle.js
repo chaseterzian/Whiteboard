@@ -16,16 +16,16 @@ $(document).ready(function() {
 		},1500);
 
 		setTimeout(function() {
-		$('#footer-bar').fadeIn(15000);
-		},1500);
+		$('#footer-bar').fadeIn(105000);
+		},4500);
 
 		setTimeout(function() {
 		$('#middle-bar').fadeIn(15000);
-		},1700);
+		},1500);
 
 		setTimeout(function() {
-		$('#top-bar').fadeIn(15000);
-		},2000);
+		$('#top-bar').fadeIn(75000);
+		},7500);
 
 		$("#room-fade").hide();
 		$("#room-fade").fadeIn(1000);
