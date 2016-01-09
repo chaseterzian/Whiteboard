@@ -1,53 +1,49 @@
 <div class = "container">
-  
-   <nav class="navbar navbar-inverse navbar-fixed-top inner-pic container" id='top-bar'>
-  </nav>
+  <nav class="navbar navbar-inverse navbar-fixed-top inner-pic container" id='top-bar'></nav>
   <div class = "page-header">
 
     <div class = "text-center times pad-bottom">
       <h1 class = "rockwell" id='whiteboard-letters'>The Whiteboard.</h1>
     </div>
 
-
     <nav class="navbar navbar-inverse inner-pic" id='middle-bar'></nav>
 
-  <div id='hide-this'>
+    <div id='hide-this'>
 
-    <div class="text-center">
-      Choose your organization
+      <div class="text-center">
+        Choose your organization
+      </div>
+
+      <div class = "times rockwell-rooms text-center padding">
+        <%= link_to "- Creative Circle -", rooms_path, class: "blk" %>
+        <hr>
+        <%= link_to "- Springdale Quartet -", root_path, data: {confirm: "you do not have permission"}, class: "blk" %>
+        <hr>
+        <%= link_to "- Boulder Property Group -", root_path, data: {confirm: "you do not have permission"}, class: "blk" %>
+        <hr>
+        <%= link_to "- Galvanize -", root_path, data: {confirm: "you do not have permission"}, class: "blk" %>
+        <hr>
+        <%= link_to "- Guest -", rooms_path, class: "blk" %>
+        <hr>
+      </div>
     </div>
-
-
-    <div class = "times rockwell-rooms text-center padding">
-      <%= link_to "- Creative Circle -", rooms_path, class: "blk" %>
-      <hr>
-      <%= link_to "- Springdale Quartet -", root_path, data: {confirm: "you do not have permission"}, class: "blk" %>
-      <hr>
-      <%= link_to "- Boulder Property Group -", root_path, data: {confirm: "you do not have permission"}, class: "blk" %>
-      <hr>
-      <%= link_to "- Galvanize -", root_path, data: {confirm: "you do not have permission"}, class: "blk" %>
-      <hr>
-      <%= link_to "- Guest -", rooms_path, class: "blk" %>
-      <hr>
-    </div>
-  </div>
 
   </div>
 </div>
 
-  <hr class = "hr-thick inner-pic container" id='footer-bar'></hr>
-  <footer id='footer-index'>
-    <div class = "container">
-      
-      <div class = "text-center times rockwell-links">
-        |
-        <%= link_to "Home", root_path, class: "blk" %>
-        |
-        <%= link_to "Flux - Like a Pro", "https://justgetflux.com/", class: "blk" %>
-        |
-        <%= link_to "Snippets", "http://www.atomtips.com/get-productive-atom-snippets/", class: "blk" %>
-        |
-        <%= link_to "Boardrooms", rooms_path, class: "blk" %>
-      </div>
+<hr class = "hr-thick inner-pic container" id='footer-bar'></hr>
+<footer id='footer-index'>
+  <div class = "container">
+    
+    <div class = "text-center times rockwell-links">
+      |
+      <%= link_to "Home", root_path, class: "blk" %>
+      |
+      <%= link_to "Flux - Like a Pro", "https://justgetflux.com/", class: "blk" %>
+      |
+      <%= link_to "Snippets", "http://www.atomtips.com/get-productive-atom-snippets/", class: "blk" %>
+      |
+      <%= link_to "Boardrooms", rooms_path, class: "blk" %>
     </div>
-  </footer>
+  </div>
+</footer>

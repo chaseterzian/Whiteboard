@@ -1,67 +1,64 @@
 <div id="room-fade">
 
-<div class = "container">
-    <nav class="navbar navbar-inverse navbar-fixed-top inner-pic container">
-    </nav>
-  <div class = "page-header">
+  <div class = "container">
+    <nav class="navbar navbar-inverse navbar-fixed-top inner-pic container"></nav>
+    <div class = "page-header">
 
-
-    <div class = "text-center times">
-      <h1 class = "rockwell">The Scratchpadder.</h1>
-    </div>
-    <br>
-    <nav class="navbar navbar-inverse inner-pic">
-      <div class="container">
+      <div class = "text-center times">
+        <h1 class = "rockwell">The Scratchpadder.</h1>
       </div>
-    </nav>
+      <br>
+      <nav class="navbar navbar-inverse inner-pic">
+        <div class="container">
+        </div>
+      </nav>
 
+      <div class = "col-md-3">
+        <div id='myPublisherDiv'></div>
+        <div id='subscribersDiv'></div>
 
-    <div class = "col-md-3">
-      <div id='myPublisherDiv'></div>
-      <div id='subscribersDiv'></div>
-
-    <script src='//static.opentok.com/v2/js/opentok.min.js'></script> 
-    <script> 
-      var apiKey = '45324832';
-      var sessionId = '2_MX40NTMyNDgzMn5-MTQ1MDY2ODE3NDc4OX5IZk5aRGhiOUc1UXFzREJUT1N4T3JqUzN-fg'; 
-      var token = 'T1==cGFydG5lcl9pZD00NTMyNDgzMiZzaWc9ZmNjMTgzNjlhZDkzNzMzZWUxYTBhNDNlYjU0MzhkYmY5YmVjMmE2Njpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5UTXlORGd6TW41LU1UUTFNRFkyT0RFM05EYzRPWDVJWms1YVJHaGlPVWMxVVhGelJFSlVUMU40VDNKcVV6Ti1mZyZjcmVhdGVfdGltZT0xNDUwNjY4MTgxJm5vbmNlPTAuOTE2NTA1NzQ0MDEyMTYxNiZleHBpcmVfdGltZT0xNDUzMjYwMTExJmNvbm5lY3Rpb25fZGF0YT0=';
-      var session = OT.initSession(apiKey, sessionId); 
-      session.on({ 
+      <script src='//static.opentok.com/v2/js/opentok.min.js'></script> 
+      <script> 
+        var apiKey = '45324832';
+        var sessionId = '2_MX40NTMyNDgzMn5-MTQ1MDY2ODE3NDc4OX5IZk5aRGhiOUc1UXFzREJUT1N4T3JqUzN-fg'; 
+        var token = 'T1==cGFydG5lcl9pZD00NTMyNDgzMiZzaWc9ZmNjMTgzNjlhZDkzNzMzZWUxYTBhNDNlYjU0MzhkYmY5YmVjMmE2Njpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5UTXlORGd6TW41LU1UUTFNRFkyT0RFM05EYzRPWDVJWms1YVJHaGlPVWMxVVhGelJFSlVUMU40VDNKcVV6Ti1mZyZjcmVhdGVfdGltZT0xNDUwNjY4MTgxJm5vbmNlPTAuOTE2NTA1NzQ0MDEyMTYxNiZleHBpcmVfdGltZT0xNDUzMjYwMTExJmNvbm5lY3Rpb25fZGF0YT0=';
+        var session = OT.initSession(apiKey, sessionId); 
+        session.on({ 
           streamCreated: function(event) { 
             session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append'}); 
           } 
-      }); 
-      session.connect(token, function(error) {
-        if (error) {
-          console.log(error.message);
-        } else {
-          session.publish('myPublisherDiv', {width: 320, height: 240}); 
-        }
-      });
-    </script> 
-    
-    </div>
+        }); 
+        session.connect(token, function(error) {
+          if (error) {
+            console.log(error.message);
+          } else {
+            session.publish('myPublisherDiv', {width: 320, height: 240}); 
+          }
+        });
+      </script> 
 
-    <div class = "col-md-9">
-      <iframe src="//www.groupboard.com/board/421399?iframe=true" width="1000" height="800" scrolling="no" frameborder="0"></iframe>
-    </div>
-    <hr class = "hr-thick inner-pic"></hr>
-
-  </div>
-</div>
-<hr class = "hr-thick inner-pic container"></hr>
-
-    <div class = "container">
-      <div class = "text-center times rockwell-links">
-        |
-        <%= link_to "Home", root_path, class: "blk" %>
-        |
-        <%= link_to "Flux - Like a Pro", "https://justgetflux.com/", class: "blk" %>
-        |
-        <%= link_to "Snippets", "http://www.atomtips.com/get-productive-atom-snippets/", class: "blk" %>
-        |
-        <%= link_to "Boardrooms", rooms_path, class: "blk" %>
       </div>
+
+      <div class = "col-md-9">
+        <iframe src="//www.groupboard.com/board/421399?iframe=true" width="1000" height="800" scrolling="no" frameborder="0"></iframe>
+      </div>
+      <hr class = "hr-thick inner-pic"></hr>
+
     </div>
+  </div>
+  <hr class = "hr-thick inner-pic container"></hr>
+
+  <div class = "container">
+    <div class = "text-center times rockwell-links">
+      |
+      <%= link_to "Home", root_path, class: "blk" %>
+      |
+      <%= link_to "Flux - Like a Pro", "https://justgetflux.com/", class: "blk" %>
+      |
+      <%= link_to "Snippets", "http://www.atomtips.com/get-productive-atom-snippets/", class: "blk" %>
+      |
+      <%= link_to "Boardrooms", rooms_path, class: "blk" %>
+    </div>
+  </div>
 
 </div>
